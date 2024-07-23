@@ -57,6 +57,9 @@ input{
         font-size: 30px;
     }
     #check:checked ~ aside{
-     width: 350px;
+    width: 350px;
+    }
+    #check:checked ~ #bars {
+    display: none;
     }
 }
