@@ -1,0 +1,62 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: rgb(144, 68, 216);
+    padding: 0;
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+span{
+visibility: hidden;
+cursor: pointer;
+}
+aside{
+    width: 40px;
+    background-color: azure;
+    /* margin-left: 20px;
+    margin-top: 15px; */
+    padding: 10px 25px;
+    border-top-right-radius: 45px;
+    transition: .5s linear;
+    border-bottom-right-radius: 45px;
+}
+aside:hover  span{
+visibility: visible;
+}
+aside:hover{
+    width: 250px;
+}
+i{
+    cursor: pointer;
+}
+p:hover{
+    background-color: rgba(78, 78, 78, 0.39);
+    padding: 0px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+label{
+    display: none;
+}
+aside:hover p{
+    line-height: 50px;
+}
+input{
+    display: none;
+}
+#bars{
+    font-size: 30px;
+}
+
+@media screen and (max-width:500px) {
+    label{
+        display: block;
+        font-size: 30px;
+    }
+    #check:checked ~ aside{
+     width: 350px;
+    }
+}
